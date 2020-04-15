@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Update</title>
+    <style type="text/css">
+      :link,
+      :visited,
+      ins {
+        text-decoration: none;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: PingFangSC-Regular, Tahoma, "Microsoft Yahei", sans-serif,
+          Arial, "Hiragino Sans GB";
+      }
+      .header {
+        padding: 0 124px;
+        width: 100%;
+        height: 64px;
+        background: #111;
+        overflow: hidden;
+      }
+      .hint {
+        margin: 50px auto 0;
+        text-align: center;
+        color: #dda83f;
+        font-size: 40px;
+        line-height: 48px;
+        height: 48px;
+      }
+      .update-text {
+        margin-top: 60px;
+        width: 100%;
+        height: 28px;
+        line-height: 28px;
+        font-size: 28px;
+        color: #000;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+      .update-hint {
+        margin-top: 15px;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 20px;
+        color: #9b9b9b;
+        text-align: center;
+      }
+      .browsers-title-box {
+        margin: 60px auto 0;
+        height: 22px;
+        width: 900px;
+        overflow: hidden;
+      }
+      .left-line,
+      .right-line {
+        width: 365px;
+        height: 10px;
+        border-bottom: 1px dotted #9b9b9b;
+      }
+      .browsers-title {
+        width: 170px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 16px;
+        text-align: center;
+        color: #9b9b9b;
+      }
+
+      .left-line,
+      .right-line,
+      .browsers-title {
+        float: left;
+      }
+      .browsers-links-box {
+        margin: 15px auto 0;
+        width: 882px;
+        height: 73px;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .browsers-links-box .browser:first-child {
+        margin-left: 0;
+      }
+
+      .browsers-links-box .browser {
+        display: inline-block;
+        margin-left: 68px;
+        padding-top: 56px;
+        height: 73px;
+        width: 60px;
+        line-height: 17px;
+        font-size: 12px;
+        text-align: center;
+        color: #9b9b9b;
+        vertical-align: top;
+        background-size: 44px 44px;
+        background-repeat: no-repeat;
+        background-position: 12px 0;
+      }
+
+      .browsers-links-box .browser-chrome {
+        background-image: url("https://img.alicdn.com/tfs/TB1vZVBMNYaK1RjSZFnXXa80pXa-44-44.png");
+      }
+
+      .browsers-links-box .browser-firefox {
+        background-image: url("https://img.alicdn.com/tfs/TB1bpphMSrqK1RjSZK9XXXyypXa-44-44.png");
+      }
+
+      .browsers-links-box .browser-360 {
+        background-image: url("https://img.alicdn.com/tfs/TB1Vt4pMFzqK1RjSZFoXXbfcXXa-44-44.png");
+      }
+
+      .browsers-links-box .browser-uc {
+        background-image: url("https://img.alicdn.com/tfs/TB1dWplMRLoK1RjSZFuXXXn0XXa-44-44.png");
+      }
+
+      .browsers-links-box .browser-maxthon {
+        background-image: url("https://img.alicdn.com/tfs/TB12ItsMMHqK1RjSZJnXXbNLpXa-44-44.png");
+      }
+
+      .browsers-links-box .browser-qq {
+        background-image: url("https://img.alicdn.com/tfs/TB1eUVlMHvpK1RjSZFqXXcXUVXa-44-44.png");
+      }
+      .download-hint {
+        margin: 60px auto 0;
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        height: 32px;
+        font-size: 16px;
+        color: #9b9b9b;
+        text-align: center;
+      }
+      .qrcode-boxs {
+        margin: 25px auto 40px;
+        width: 882px;
+        height: 110px;
+        text-align: center;
+      }
+      .qrcode-boxs .qrcode-box {
+        display: inline-block;
+        height: 110px;
+        width: 100px;
+        vertical-align: top;
+      }
+      .qrcode-boxs .qrcode-box:first-child {
+        margin-left: 0;
+      }
+      .qrcode-boxs .qrcode-box {
+        margin-left: 240px;
+      }
+      .qrcode-boxs .qrcode-box img {
+        width: 300px;
+        height: 118px;
+      }
+      .beian {
+        margin: 60px auto 0;
+        width: 882px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        class="logo"
+        src="https://www.kokuyo.cn/wp-content/uploads/2020/03/cropped-logo-1.png"
+      />
+    </div>
+    <div class="hint">温馨提示</div>
+    <div class="update-text">
+      您的浏览器版本过低，为了保证更好的使用体验，请升级您的浏览器
+    </div>
+    <div class="update-hint">
+      （ IE 浏览器需要使用 Microsoft Edge 79 及以上版本）
+    </div>
+    <div class="browsers-title-box">
+      <div class="left-line"></div>
+      <div class="browsers-title">常用浏览器下载</div>
+      <div class="right-line"></div>
+    </div>
+    <div class="browsers-links-box">
+      <a
+        class="browser browser-chrome"
+        href="https://www.google.com/chrome/"
+        target="_blank"
+        >谷歌浏览器</a
+      >
+      <a
+        class="browser browser-firefox"
+        href="https://www.mozilla.org/zh-CN/firefox/"
+        target="_blank"
+        >火狐浏览器</a
+      >
+      <a
+        class="browser browser-360"
+        href="https://browser.360.cn/se/"
+        target="_blank"
+        >360浏览器</a
+      >
+      <a class="browser browser-uc" href="http://pc.uc.cn/" target="_blank"
+        >UC浏览器</a
+      >
+      <a
+        class="browser browser-maxthon"
+        href="http://www.maxthon.cn/"
+        target="_blank"
+        >傲游浏览器</a
+      >
+      <a
+        class="browser browser-qq"
+        href="https://browser.qq.com/"
+        target="_blank"
+        >QQ浏览器</a
+      >
+    </div>
+    <div class="download-hint">
+      您也可以扫码关注 KOKUYO 官方微博和官方微信等
+    </div>
+    <div class="qrcode-boxs">
+      <div class="qrcode-box weibo-box">
+        <img
+          class="weibo-qrcode"
+          src="https://www.kokuyo.cn/wp-content/uploads/2020/03/wenjuweibo-1024x404.png"
+        />
+      </div>
+      <div class="qrcode-box weixin-box">
+        <img
+          class="weixin-qrcode"
+          src="https://www.kokuyo.cn/wp-content/uploads/2020/03/wenjuweixin-1024x404.png"
+        />
+      </div>
+    </div>
+    <div class="qrcode-boxs">
+      <div class="qrcode-box weixin-box">
+        <img
+          class="weixin-qrcode"
+          src="https://www.kokuyo.cn/wp-content/uploads/2020/03/jiajuweixin-1024x404.png"
+        />
+      </div>
+      <div class="qrcode-box weixin-box">
+        <img
+          class="weixin-qrcode"
+          src="https://www.kokuyo.cn/wp-content/uploads/2020/03/yiyoubaiweixin-1024x404.png"
+        />
+      </div>
+    </div>
+    <div class="beian">
+      版权所有 © KOKUYO
+      <a href="http://beian.miit.gov.cn">沪ICP备16036732号</a>
+      <a
+        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502000757"
+        >沪公网安备 31010502000757号</a
+      >
+    </div>
+  </body>
+</html>
